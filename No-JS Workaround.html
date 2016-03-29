@@ -1,0 +1,13 @@
+<script type="text/javascript" language="javascript">
+    document.Echo = document["standard" + "Write"] == null ? document["write"] : document["standard" + "Write"];
+    var include = function(path, id) {
+        path = "/bootstrap/js/" + path;
+        document.Echo('<' + 'script src="' + path + '" id="' + id + '" type="text\/javascript"><' + '\/script>');
+    };
+</script>
+<script language="javascript" type="text/javascript">
+    include("jquery-1.12.2.min.js", 'jq');
+</script>
+<script language="javascript" type="text/javascript">
+    include("bootstrap.min.js", 'jq');
+</script>
